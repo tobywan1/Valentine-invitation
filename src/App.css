@@ -1,0 +1,60 @@
+/* App.css */
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7); /* Darker semi-transparent overlay */
+  transition: background-color 0.5s ease; /* Add smooth transition */
+}
+
+.invitation-form {
+  background-color: #ffc0cb; /* Light pink background color */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #333; /* Darker border color */
+}
+
+.gif-container img {
+  width: 150px;
+  height: auto;
+}
+
+.choices {
+  display: flex;
+  justify-content: space-around;
+}
+
+.yes-button,
+.no-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+.yes-button:hover {
+  background-color: #5cb85c;
+  color: #fff;
+}
+
+.no-button:hover {
+  background-color: #d9534f;
+  color: #fff;
+}
+.no-button.disabled {
+  position: relative;
+  left: -1000px; /* Move the button out of the visible area */
+  visibility: hidden; /* Hide the button */
+}
+.rejected,
+.accepted {
+  background-color: #dff0d8;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
